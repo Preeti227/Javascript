@@ -45,3 +45,36 @@ let myObj={
 const myFunc = function(){
     console.log("Hello World");
 }
+
+
+// Stack and Heap Memory
+// Stack Memory - Primitive data types are stored here (string, number, boolean, null, undefined, symbol)
+// Heap Memory - Non-primitive data types are stored here (array, object, function)
+
+// When we assign a primitive data type to a variable, it is stored in the stack memory as a copy. 
+// When we assign a non-primitive data type to a variable, it is stored in the heap memory and the variable holds a reference to the location of the data in the heap memory.   
+// In non-primitive data types there are no copies, only reference is passed. So if we change the value of a non-primitive data type, it will change the value for all the variables that reference to that data in the heap memory.
+
+let myName="Preeti"
+let anotherName=myName
+console.log(myName)
+console.log(anotherName)
+
+myName="Neha"
+console.log(myName)
+console.log(anotherName)
+// This is because myName and anotherName are stored in the stack memory as a copy. So when we change the value of myName, it does not affect anotherName.
+
+let myObj1={
+    name:"Preeti",
+    age:20
+}
+
+let anotherObj=myObj1
+console.log(myObj1)
+console.log(anotherObj)
+
+anotherObj.name="Neha"
+console.log(myObj1)
+console.log(anotherObj)
+// This is because myObj1 and anotherObj are stored in the heap memory and both variables hold a reference to the same location of the data in the heap memory. So when we change the value of anotherObj, it changes the value for myObj1 as well.
