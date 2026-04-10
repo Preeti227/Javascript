@@ -25,3 +25,23 @@ console.log(1+2+"2")//32
 //=== Strict check (checks value as well as the datatype)
 console.log("2"==2)
 console.log("2"===2)
+
+
+let id=Symbol("123")
+let anotherid=Symbol("123")
+console.log(id===anotherid)
+
+
+//Array
+const ar=['Preeti','Neha','Xyz'];
+
+//Object
+let myObj={
+    name:"Preeti",
+    age:20
+}
+
+//Function
+const myFunc = function(){
+    console.log("Hello World");
+}
