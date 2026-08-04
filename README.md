@@ -6,3 +6,7 @@ String, Boolean, Symbol, BigInt, null, undefined, Number
 ### Javascript is a dynamically typed language.
 
 ## Reference(Non primitive) :  Array, objects, Functions
+
+### Global Execution Context
+Function Execution Context
+Eval Execution Context
