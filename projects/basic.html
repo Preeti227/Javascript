@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Practise</title>
+    <style>
+        /*p{
+         background-color:antiquewhite;
+         padding:10px;   
+        }
+         body{
+            background-image:url("")
+         };
+         */
+         
+        .first{
+            background-color:palegoldenrod;
+            color:black;
+        }
+        #one{
+           background-color:rgb(215, 191, 255);
+            color:rgb(53, 0, 73); 
+        }
+        input[type="text"]{
+            padding:5px;
+        }
+        button:hover{
+            background-color:pink;
+            border:4px dashed rgb(196, 3, 35);
+            padding: 5px;
+        }
+        .styling{
+            color:black;
+            background-color: orange;
+            padding: 10px 5px;
+            border-color: rgb(76, 5, 5);
+            border-width:3px;
+            border-style:dashed;
+        }
+        .text{
+            text-decoration: underline;
+            text-transform:uppercase;
+            text-align:center;
+            font-family:'Courier New', Courier, monospace;
+            font-style: italic;
+            font-weight:bold;
+            font-size: 60px;
+            line-height: 100px;
+        }
+        .container{
+            display:flex;
+            flex-direction: row;
+            justify-content:center;
+            /*align-items:center;*/
+            gap:10px;
+            border:1px solid black;
+        }
+        .box{
+            height:100px;
+            width:100px;
+            border: black 2px solid;
+            margin: 3px;
+        }
+        .grid{
+            display:grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: 100px 100px 500px;
+            row-gap: 10px;
+            column-gap:10px;
+        }
+        .item{
+            height:100px;
+            border:2px solid black;
+        }
+        .one{
+            grid-column-start:1;
+            grid-column-end:3;
+        }
+    </style>
+</head>
+<body>
+    <!--
+    <h1>Preeti Dey</h1>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library in London, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets.</p>
+
+    <p class="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, illo!</p>
+    <p id="one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, illo!</p>
+    <input type="text">
+    <input type="password"> Password
+    <button> Hover me</button>
+    <p class="styling">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, nemo.</p>
+    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, nemo.</p>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+    </div> -->
+    <div class="grid">
+        <div class="item one"></div>
+        <div class="item two"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+</body>
+</html>
